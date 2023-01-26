@@ -179,19 +179,21 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 
 -- Harpoon keybindings
-vim.keymap.set("n", "<leader>a", "<cmd>lua require('harpoon.mark').add_file()<CR>")
-vim.keymap.set("n", "<leader>h", "<cmd>lua require('harpoon.ui').toggle_quick_menu()<CR>")
+vim.keymap.set("n", "<leader>ha", "<cmd>lua require('harpoon.mark').add_file()<CR>")
+vim.keymap.set("n", "<leader>hh", "<cmd>lua require('harpoon.ui').toggle_quick_menu()<CR>")
 
-vim.keymap.set("n", "<leader>1", "<cmd>lua require('harpoon.ui').nav_file(1)<CR>")
-vim.keymap.set("n", "<leader>2", "<cmd>lua require('harpoon.ui').nav_file(2)<CR>")
-vim.keymap.set("n", "<leader>3", "<cmd>lua require('harpoon.ui').nav_file(3)<CR>")
-vim.keymap.set("n", "<leader>4", "<cmd>lua require('harpoon.ui').nav_file(4)<CR>")
+vim.keymap.set("n", "<leader>h1", "<cmd>lua require('harpoon.ui').nav_file(1)<CR>")
+vim.keymap.set("n", "<leader>h2", "<cmd>lua require('harpoon.ui').nav_file(2)<CR>")
+vim.keymap.set("n", "<leader>h3", "<cmd>lua require('harpoon.ui').nav_file(3)<CR>")
+vim.keymap.set("n", "<leader>h4", "<cmd>lua require('harpoon.ui').nav_file(4)<CR>")
 
 --show kepbindings with whichkey
 --add your own here if you want them to
 --show up in the popup as well
 wk.register(
-  {
+  { h = {
+    name = 'harpoon'
+  },
     c = {
       name = 'code',
       c = { ':SlimeConfig<cr>', 'slime config' },

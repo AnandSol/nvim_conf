@@ -25,6 +25,6 @@ return {
   { 'jpalardy/vim-slime' },
   -- paste an image to markdown from the clipboard
   -- with :PasteImg,
-  { 'ekickx/clipboard-image.nvim', lazy = true },
+  { 'ekickx/clipboard-image.nvim' },
 
 }
