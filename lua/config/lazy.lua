@@ -22,7 +22,7 @@ require("lazy").setup("plugins", {
   --   path = "~/projects",
   --   patterns = { "jmbuhr", "quarto-dev" },
   -- },
-  install = { colorscheme = { "catppuccin", "habamax" } },
+  -- install = { colorscheme = { "catppuccin", "habamax" } },
   -- checker = { enabled = true },
   rtp = {
     disabled_plugins = {

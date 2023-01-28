@@ -136,5 +136,14 @@ return {
             util.path.dirname(fname)
       end
     }
+
+    lspconfig.rust_analyzer.setup {
+      on_attach = on_attach, 
+      capabilities = capabilities,
+      flags = lsp_flags,
+      cmd = {
+        "rustup", "run", "stable", "rust-analyzer",
+      }
+    }
   end
 }

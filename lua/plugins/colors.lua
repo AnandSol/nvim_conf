@@ -2,9 +2,11 @@ return {
   { 'shaunsingh/nord.nvim' },
   { 'folke/tokyonight.nvim' },
   { 'EdenEast/nightfox.nvim' },
-  { "catppuccin/nvim", name = "catppuccin", config = function()
+  { "catppuccin/nvim",
+    lazy = false,
+    name = "catppuccin", config = function()
     require("catppuccin").setup {
-      flavour = "mocha", -- mocha, macchiato, frappe, latte
+      flavour = "frappe", -- mocha, macchiato, frappe, latte
       term_colors = true,
       integrations = {
         nvimtree = true,
@@ -15,10 +17,27 @@ return {
       }
     }
     vim.cmd.colorscheme 'catppuccin'
-    local colors = require('catppuccin.palettes.mocha')
+    local colors = require('catppuccin.palettes.frappe')
     vim.cmd.highlight { 'Tabline', 'guifg=' .. colors.green, 'guibg=' .. colors.mantle }
   end
   },
+
+  -- { 'AlexvZyl/nordic.nvim',
+  --   lazy = false,
+  --   priority = 1000,
+  --   config = function()
+  --     local palette = require 'nordic.colors'
+  --     require 'nordic' .setup{
+  --       telescope = {
+  --         style = 'classic',
+  --       },
+  --       cursorline = {
+  --         theme = 'light'
+  --       },
+  --     }
+  --     vim.cmd.colorscheme 'nordic'
+  --   end
+  -- },
 
   -- color html colors
   { 'norcalli/nvim-colorizer.lua', config = function()

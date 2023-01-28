@@ -119,6 +119,8 @@ return {
           entries = "native",
         },
         window = {
+          
+          -- completion = cmp.config.window.bordered(),
           documentation = {
             border = require 'misc.style'.border,
           },

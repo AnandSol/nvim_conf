@@ -130,7 +130,7 @@ vim.keymap.set('t', '<c-j>', [[<c-\><c-n><c-w>w]], { silent = true, noremap = tr
 vim.keymap.set('n', '<leader>j', [[<c-w>wi]], { silent = true, noremap = true })
 
 -- open filetree
-nmap('<c-b>', '<cmd>NvimTreeToggle<cr>')
+nmap('<leader>b', '<cmd>NvimTreeToggle<cr>')
 
 -- move between splits and tabs
 nmap('<c-h>', '<c-w>h')

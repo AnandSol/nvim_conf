@@ -1,6 +1,6 @@
 vim.g.markdown_fenced_languages = { 'html', 'python', 'bash=sh', 'R=r' }
 vim.opt.termguicolors = true
-
+vim.opt.wrap = false
 -- more opinionated
 vim.opt.number = true -- show linenumbers
 vim.opt.timeoutlen = 400 -- until which-key pops up
