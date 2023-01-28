@@ -145,5 +145,10 @@ return {
         "rustup", "run", "stable", "rust-analyzer",
       }
     }
+
+    lspconfig.jdtls.setup {
+      capabilities = capabilities,
+      flags = lsp_flags,
+    }
   end
 }
