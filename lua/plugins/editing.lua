@@ -18,5 +18,7 @@ return {
     require('harpoon').setup {} 
   end
   },
+  
+  { 'christoomey/vim-tmux-navigator' },
 
 }

@@ -31,10 +31,10 @@ vim.keymap.set("n", "<S-Left>", "<cmd>vertical resize -2<CR>")
 vim.keymap.set("n", "<S-Right>", "<cmd>vertical resize +2<CR>")
 
 -- Move between windows using <ctrl> direction
-vim.keymap.set("n", '<C-j>', '<C-W>j')
-vim.keymap.set("n", '<C-k>', '<C-W>k')
-vim.keymap.set("n", '<C-h>', '<C-W>h')
-vim.keymap.set("n", '<C-l>', '<C-W>l')
+-- vim.keymap.set("n", '<C-j>', '<C-W>j')
+-- vim.keymap.set("n", '<C-k>', '<C-W>k')
+-- vim.keymap.set("n", '<C-h>', '<C-W>h')
+-- vim.keymap.set("n", '<C-l>', '<C-W>l')
 
 -- Add undo break-points
 vim.keymap.set("i", ",", ",<c-g>u")
@@ -46,10 +46,10 @@ function _G.set_terminal_keymaps()
   local opts = { buffer = 0 }
   vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
   vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
-  vim.keymap.set('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
-  vim.keymap.set('t', '<C-j>', [[<Cmd>wincmd j<CR>]], opts)
-  vim.keymap.set('t', '<C-k>', [[<Cmd>wincmd k<CR>]], opts)
-  vim.keymap.set('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
+  -- vim.keymap.set('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
+  -- vim.keymap.set('t', '<C-j>', [[<Cmd>wincmd j<CR>]], opts)
+  -- vim.keymap.set('t', '<C-k>', [[<Cmd>wincmd k<CR>]], opts)
+  -- vim.keymap.set('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
 end
 
 -- if you only want these mappings for toggle term use term://*toggleterm#* instead
@@ -126,17 +126,17 @@ nmap('<c-u>', '<c-u>zz')
 -- get out ouf terminal insert mode with esc
 vim.keymap.set('t', '<esc>', [[<c-\><c-n>]], { silent = true, noremap = true })
 --move to other window
-vim.keymap.set('t', '<c-j>', [[<c-\><c-n><c-w>w]], { silent = true, noremap = true })
+-- vim.keymap.set('t', '<c-j>', [[<c-\><c-n><c-w>w]], { silent = true, noremap = true })
 vim.keymap.set('n', '<leader>j', [[<c-w>wi]], { silent = true, noremap = true })
 
 -- open filetree
 nmap('<leader>b', '<cmd>NvimTreeToggle<cr>')
 
 -- move between splits and tabs
-nmap('<c-h>', '<c-w>h')
-nmap('<c-l>', '<c-w>l')
-nmap('<c-j>', '<c-w>j')
-nmap('<c-k>', '<c-w>k')
+-- nmap('<c-h>', '<c-w>h')
+-- nmap('<c-l>', '<c-w>l')
+-- nmap('<c-j>', '<c-w>j')
+-- nmap('<c-k>', '<c-w>k')
 nmap('H', '<cmd>tabprevious<cr>')
 nmap('L', '<cmd>tabnext<cr>')
 
